@@ -1,0 +1,840 @@
+    /*轮播图css*/
+
+    .banner_wrap{
+      width: 100%;
+      height: 593px;
+      overflow: hidden;
+      min-width: 1100px;
+    }
+    .banner_wrap .box{
+       position: relative;
+      height: 593px;
+    }
+    .banner_wrap .box ul{
+      list-style: none;
+    }
+    .banner_wrap .box ul li{
+      width: 100%;
+      height: 593px;
+      background: url(../image/banner01_bg.jpg) no-repeat center top;
+      background-size:100% 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .banner_wrap .box ul .li1{
+      background: url(../image/banner02_bg.jpg) no-repeat center top;
+      background-size:100% 100%;
+    }
+    .banner_wrap .box ul li img{
+      position: absolute;
+    }
+    .banner_wrap .box .banner_sub{
+      position: absolute;
+      top: 535px;
+      width: 216px;
+      height: 29px;
+      left:50%;
+      margin-left: -108px;
+      background: url(../image/next&prev_line.png) no-repeat 0 14px;
+      z-index: 1001;
+    }
+    .banner_sub .ellispe{
+      width: 56px;
+      height: 13px;
+      border-radius: 10px;
+      border: 3px solid #E2E2E2;
+      position: absolute;
+      background: #F1F2F6;
+      top: 6px;
+      left: 74px;
+     
+    }
+    .banner_sub img{
+     position: absolute;
+    }
+    .banner_sub .banner_next{
+      width: 29px;
+      height: 29px;
+      background: url(../image/next_jiantou.png);
+      display: block;
+      position: absolute;
+      left: 180px;
+      top: 0px;
+    }
+    .banner_sub .banner_prev{
+      width: 29px;
+      height: 29px;
+      background: url(../image/prev_jiantou.png);
+      display: block;
+
+    }
+    .banner_sub .ellispe div{
+      width: 10px;
+      height: 10px;
+      background: #E2E2E2;
+      border-radius: 50%;
+      float: left;
+      margin-left:6px;
+      margin-top: 2px;
+      z-index: 10000;
+    }
+    .banner_next:hover{
+      background: url(../image/next_jiantou_hover.png);
+    }
+    .banner_prev:hover{
+      background: url(../image/prev_jiantou_hover.png);
+    }
+    .banner_sub .ellispe .active{
+      background: #006FD6;
+    }
+
+    /*产品信息*/
+
+    .products{
+      background: #F1F2F6;
+      height: 886px;
+      text-align: center;
+    }
+    .products .products_downarrow{
+      width: 58px;
+      height: 58px;
+      background: url(../image/goOn_icon01.png);
+      margin:50px auto;
+      display: block;
+    }
+    .products>span{
+      color: #301759;
+      display: block;
+      text-align: center;
+    }
+    .products_detail{
+      margin: 70px auto;
+
+    }
+    
+    .products .products_detail .point_left{
+    width: 20px;
+    height:380px;
+    position: relative;
+    top:24px;
+    float: left;
+    background: url("../image/chanpin_nowline_bgline.png") repeat-y center top ;
+    }
+    .products .products_detail .point_left .line{
+    width: 100%;
+    height: 11px;
+    /*background-color: darkblue;*/
+    margin-bottom: 63px;
+    position: relative;
+    }
+    .products .products_detail .point_left .line i{
+    width: 100%;
+    height: 19px;
+    background: url("../image/chanpin_nowline_daquan.png") center top no-repeat;
+    display: block;
+    position: absolute;
+    top:-4px;
+    display: none;
+   } 
+   .products .products_detail .point_left .line span{
+    width: 100%;
+    height:11px;
+    background: url("../image/chanpin_nowline_xiaoquan.png") no-repeat center top;
+    display: block;
+   }
+
+   .products .products_detail .point_left .now i{
+    display: block;
+   }
+   .products .products_detail .point_left .now span{
+    display: none;
+   }
+   .products .products_detail .point_left .line:hover span{
+    animation: img_psn 0.5s forwards;
+   }
+
+   @keyframes img_psn {
+    0%{
+        background-position: center 0;
+    }
+    100%{
+        background-position: center -11px;
+    }
+   }
+    .products_detail .products_box{
+      width: 1033px;
+      height: 436px;
+      float: left;
+      margin-left: 47px;
+      position: relative;
+    }
+    .products_detail .products_box li{
+      position: absolute;
+      display: none;
+      text-align: left;
+    }
+    .products_detail .products_box .now{
+      display: block;
+    }
+    .products_box ul li img{
+      display: block;
+      float: left;
+    }
+    .products_box ul li>div{
+      width: 618px;
+      margin-left:45px;
+      float: right;
+      position: relative;
+    }
+    .products_box ul li div span{
+      font-family: '华文楷体';
+      font-size: 30px;
+      color: #301759;
+    }
+    .products_box ul li div img{
+      position: absolute;
+    }
+    .products_box ul li div p{
+      font-size: 14px;
+      color: #848388;
+    }
+    .products_box ul li div .abstract{
+      font-size: 24px;
+      margin-top: 83px;
+      margin-left: 137px;
+      display: block;
+    }
+    .products_box .products_sub{
+      width: 618px;
+      height: 29px;
+      background: url(../image/next&prev_line.png) no-repeat center center;
+      background-size: 89% 13%;
+      z-index: 10000;
+      position: absolute;
+      top: 235px;
+      right: 0px;
+    }
+    .products_box .products_prev{
+      width: 29px;
+      height: 29px;
+      background: url(../image/prev_jiantou.png);
+      display: block;
+      float: left;
+      cursor: pointer;
+    }
+    .products_box  .products_prev:hover{
+      background: url(../image/prev_jiantou_hover.png);
+    }
+    .products_box .products_next{
+      width: 29px;
+      height: 29px;
+      background: url(../image/next_jiantou.png);
+      display: block;
+      float: right;
+      cursor: pointer;
+    }
+    .products_box .products_next:hover{
+      background: url(../image/next_jiantou_hover.png);
+    }
+
+    .products .products_detail ul li div h3{
+    width: 216px;
+    height: 52px;
+    color: #6B696F;
+    font-size: 18px;
+    font-family: "华文楷体";
+    text-align: center;
+    line-height: 52px;
+    background: url("../image/yinhao_zuo.png") no-repeat left top,url("../image/yinhao_you.png") no-repeat right bottom;
+    position: absolute;
+    margin-left: 400px;
+  }
+
+   /*公司介绍css*/
+   .company{
+    width: 100%;
+    min-width: 1100px;
+    height: 923px;
+    background:url(../image/mokuai02_bg.jpg) no-repeat center top;
+    border: 1px solid #F1F2F6;
+   }
+   .company .products{
+    background:none;
+    margin-top: 128px;
+   }
+   #company_h3{
+    color: #BCA1CC;
+    background: url("../image/yinhao02_zuo.png") no-repeat left top,url("../image/yinhao02_you.png") no-repeat right bottom;
+    position: absolute;
+    width: 230px;
+   }
+
+   .business{
+    width: 100%;
+    background:#F1F2F6;
+    text-align: center;
+
+   }
+   .business>img{
+     margin:25px auto;
+     display: block;
+   }
+   h2{
+    font-size: 54px;
+    font-family: "华文楷体";
+    color: #311859;
+   }
+   h3{
+    font-size: 18px;
+    font-family: Arial;
+    color: #311859;
+    letter-spacing: 3px;
+   }
+   .business ul li{
+    position: relative;
+    padding-bottom: 60px;
+    border-bottom: 2px dashed #E0E0E2;
+   }
+   .business ul li span{
+    font-size: 90px;
+    color: #6B696F;
+    font-family: "宋体";
+    margin-top:46px;
+    display: block;
+    float: left;
+   }
+   .threepoints{
+      width: 37px;
+      height: 8px;
+      margin:22px auto;
+      background: url(../image/three_points01.png);
+      display: block;
+
+    }
+    .business ul li .spread{
+      float: right;
+      background:url(../image/business_zhankaishouqi.png);
+      background-position: 0px 0px;
+      width: 67px;
+      height: 67px;
+      margin-top: 60px;
+      cursor: pointer;
+    }
+    .business ul li .now{
+      background-position: 0px -67px;
+    }
+
+    .business ul li img{
+      margin-top: 42px;
+      margin-left: -25px;
+      cursor: pointer;
+    }
+    .business p{
+      color: #5D556F;
+      font-family: "华文楷体";
+      line-height: 14px;
+    }
+    .business ul li .business_left{
+     position: absolute;
+     left: 280px;
+     top: 45px;
+     text-align: right;
+    }
+    .business ul li .business_right{
+     position: absolute;
+     top: 28px;
+     right: 125px;  
+     text-align: left;
+    }
+
+    .business ul li .business_detail{
+      width: 780px;
+      margin:68px 0 0 182px;
+      display: none;
+    }
+    .business ul li .business_detail p{
+      font-family: "华文楷体";
+      font-size: 15px;
+      text-align: left;
+      color: #6B696F;
+      line-height: 23px;
+    }
+    .business ul li .business_detail p:first-child{
+      text-indent: 3em;
+    }
+
+
+    .team{
+      height: 676px;
+      background: #F1F2F6;
+      text-align: center;
+      position: relative;
+    }
+    .team img{
+      margin: 0 auto;
+      display: block;
+    }
+   
+    .team .team_box{
+      height: 254px;
+      overflow: hidden;
+      margin-top: 38px;
+    }
+    .team .team_box ul li{
+      height: 254px;
+      margin-right: 26px;
+      float: left;
+      width: 524px;
+      position:relative;
+      font-family: "华文楷体";
+    }
+    .team .team_box ul>div{
+      position: absolute;
+    }
+    .team .team_box ul li>.avatar{
+      left: 28px;
+      display: block;
+      position: absolute;
+    }
+    .team .team_box ul li>.avatar:hover +i{
+      display: block;
+    }
+    .team .team_box ul li i{
+      display: none;
+      left: 28px;
+      position: absolute;
+      background: url(../image/team_amore.png);
+      width:156px;
+      height: 156px;
+    }
+    .team .team_box ul li>div{
+      margin-top: 64px;
+      width: 534px;
+      height: 186px;
+      border: 1px solid #E0E1E5;
+    }
+    .team .team_box ul li>div .team_left{
+      width: 212px;
+      height: 70px;
+      text-align: center;
+      margin-top: 116px;
+      margin-right:10px;
+      float: left;
+      position: absolute;
+    }
+    .team .team_box ul li .team_left h4{
+      font-size:24px;
+      color: #83759E;
+    }
+    .team .team_box ul li .team_left h5{
+      font-size:18px;
+      color: #83759E;
+    }
+    .team .team_box ul li>div .team_right{
+      width: 245px;
+      height: 100%;
+      float: left;
+      margin-right: 20px;
+      position: relative;
+      left: 200px;
+    }
+    .team .team_box ul li>div .team_right p{
+      font-size: 15px;
+      width: 225px;
+      margin-top: 28px;
+      display: block;
+      text-align: left;
+      color: #838385;
+    }
+    .team .team_box ul li>div .team_right>div{
+      background: #E7E7EB;
+      height: 48px;
+      position: absolute;
+      top:120px;
+      width: 100%;
+      cursor: pointer;
+    }
+    .team .team_box ul li>div .team_right>div>span{
+      display: block;
+      font-size: 16px;
+      color: #5F4B81;
+      position: absolute;
+      left: 100px;
+      top: 15px;
+    }
+    .team .team_box ul li>div .team_right>div>div{
+      width: 46px;
+      height: 46px;
+      background: #D9D9E1;
+      border: 1px solid #D9D9E1;
+    }
+     .team_menu{
+      float:right;
+      width: 47px;
+      height: 100%;
+      background:#2999D5;
+      right: 0;
+     }
+     .team_menu div{
+      width: 47px;
+      height: 25%;
+      background: url(../image/team_contact.png) no-repeat center center;
+      position: static;
+     }
+
+     .team_menu div:nth-child(1){
+      background-position: 13px -28px;
+     }
+     .team_menu div:nth-child(3){
+      background-position: 13px -123px;
+      
+     }
+      .team_menu div:nth-child(4){
+      background-position: 13px -167px;
+   
+     }
+    .team .team_sub{
+      position: absolute;
+      top: 575px;
+      width: 216px;
+      height: 29px;
+      left:50%;
+      margin-left: -108px;
+      background: url(../image/next&prev_line.png) no-repeat 0 14px;
+      z-index: 1001;
+    }
+    .team_sub .ellispe{
+      width: 56px;
+      height: 13px;
+      border-radius: 10px;
+      border: 3px solid #E2E2E2;
+      position: absolute;
+      background: #F1F2F6;
+      top: 6px;
+      left: 74px;
+     
+    }
+    .team_sub .team_next{
+      width: 29px;
+      height: 29px;
+      background: url(../image/next_jiantou.png);
+      display: block;
+      position: absolute;
+      left: 180px;
+      top: 0px;
+      cursor: pointer;
+    }
+    .team_sub .team_prev{
+      width: 29px;
+      height: 29px;
+      background: url(../image/prev_jiantou.png);
+      display: block;
+      cursor: pointer;
+
+    }
+    .team_sub .ellispe div{
+      width: 10px;
+      height: 10px;
+      background: #E2E2E2;
+      border-radius: 50%;
+      float: left;
+      margin-left:6px;
+      margin-top: 2px;
+      z-index: 10000;
+    }
+    .team_next:hover{
+      background: url(../image/next_jiantou_hover.png);
+    }
+    .team_prev:hover{
+      background: url(../image/prev_jiantou_hover.png);
+    }
+    .team_sub .ellispe .active{
+      background: #006FD6;
+    }
+    .envelope{
+      width: 20px;
+      height: 12px;
+      display:block;
+      background: url(../image/team_contact.png);
+      margin: 16px 13px;
+    }
+
+    .partner{
+      height: 910px;
+      width: 100%;
+      background: white;
+      text-align: center;
+    }
+   .partner .partner_top{
+     width: 100%;
+     background: url(../image/hezuo_topbg.png) top center;
+     height: 30px;
+   }
+   .partner .partner_bottom{
+    width: 100%;
+    height: 30px;
+    margin-top: 644px;
+    background: url(../image/hezuo_bottombg.png) no-repeat bottom center;
+   }
+   .partner .partner_left{
+    text-align: left;
+    margin-top: 75px;
+    float: left;
+    width: 540px;
+    
+   }
+   .partner .partner_right{
+    text-indent:75px;
+    text-align: left;
+    margin-top: 75px;
+    float: left;
+    width: 555px;
+    border-left: 1px solid #BDBDBD;
+    position: relative;
+   }
+   .partner .partner_right>span{
+    position: absolute;
+    width: 68px;
+    height: 27px;
+    background:url(../image/yonghu_morebg.png) -70px 0;
+    left: 467px;
+    top: 20px;
+   }
+
+
+   .partner h4{
+    font-size: 36px;
+    color: #5F4B81;
+   }
+   .partner h5{
+    font-size: 18px;
+    color: #301759;
+    letter-spacing: 3px;
+    margin-left: 10px;
+   }
+   .partner ul li{
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+    height: 80px;
+   }
+
+
+    /*lianxiwomen*/
+   .contact{
+    height: 848px;
+    width: 100%;
+    text-align: center;
+   }
+   .contact .contact_top{
+    margin-top: 66px;
+    height: 290px;
+    border-top: 1px solid #F0F0F0;
+    position: relative;
+   }
+   .contact .contact_top>div{
+    width: 348px;
+    float: left;
+    margin-right: 26px;
+    height: 48px;
+   }
+   .contact .contact_top>div>input{
+    display: block;
+    width: 272px;
+    height: 38px;
+    float: left;
+    outline: none;
+    padding-left: 22px;
+    color: #726291;
+   }
+  .contact .contact_top>div>div{
+    width: 48px;
+    height: 100%;
+    display: block;
+    float: left;
+    background: url(../image/lianxi_icons.png) no-repeat 15px 13px #E7E7EB;
+  }
+
+  .contact .contact_top .comment{
+    height: 216px;
+    width: 720px;
+    margin-top: 26px;
+    float: left;
+  }
+  .contact .contact_top .comment input{
+    width: 645px;
+    height: 210px;
+    display: block;
+  }
+  .contact .contact_top p:nth-child(5){
+    margin-top: 80px;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+
+  }
+  .contact .contact_top p:nth-child(6){
+    margin-top: 50px;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .contact .contact_top .contact_message{
+    position: absolute;
+    width: 348px;
+    height: 48px;
+    background:#158BCB;
+    left: 750px;
+    top: 240px;
+  }
+  .contact .contact_top .contact_message div{
+    width: 48px;
+    height: 100%;
+    display: block;
+    background: url(../image/lianxi_icons.png) no-repeat -177px 13px #2999D5;
+  }
+  .contact .contact_top .contact_message span{
+    color: white;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+  }
+
+  .contact .contact_bottom{
+    margin-top: 90px;
+    height: 148px;
+  }
+
+  .contact .contact_bottom ul li{
+    float: left;
+    width: 356px;
+    height: 100%;
+    text-align: left;
+    margin-right: 10px;
+  }
+  .contact .contact_bottom ul li img{
+    float: left;
+  }
+  .contact .contact_bottom ul li div{
+    float: left;
+    margin-left: 10px;
+  }
+  .contact .contact_bottom ul li div>h4{
+    font-size: 24px;
+    color: #5F4B81;
+  }
+  .contact .contact_bottom ul li div>p{
+    font-size: 18px;
+    color: #514D5B;
+    line-height:16px;
+  }
+
+  .map{
+    width: 100%;
+    height: 686px;
+    background: white;
+    position: relative;
+    }
+  .map .map_top{
+    width: 100%;
+    height: 32px;
+    background: url(../image/map_topimg.png) center top;
+    position: absolute;
+    z-index: 10000;
+  }
+  .map .map_bottom{
+    margin-bottom: 0px;
+    width: 100%;
+    height: 33px;
+    background: url(../image/map_bottomimg.png) center bottom;
+    position: absolute;
+    bottom: 0px;
+  }
+  .map #map{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    position: absolute;
+    top:0%;
+  }
+
+
+
+  .bottom{
+    width: 100%;
+    height:334px;
+    background: url(../image/yinyue_bg.jpg);
+    border-top: 1px solid #201034;
+    text-align: center;
+  }
+  .bottom .bottom_rhythm{
+    margin-top: 110px;
+    height: 148px;
+    border-bottom: 2px dashed #9890A2;
+  }
+  .bottom p{
+    color: white;
+    font-size: 14px;
+    margin-top: 26px;
+  }
+  .bottom .bottom_rhythm ul{
+    margin: 0 auto;
+    height: 100%;
+    width: 560px;
+  }
+  .bottom .bottom_rhythm ul li{
+    margin-right: 25px;
+    width: 57px;
+    height: 100%;
+    float: left;
+  }
+  .bottom .bottom_rhythm ul li span{
+    width: 100%;
+    display: block;
+    height: 57px;
+     background: url(../image/yinyue_duo.png);
+     cursor: pointer;
+
+  }
+  .bottom .bottom_rhythm ul li span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(2) span{
+    background: url(../image/yinyue_lai.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(2) span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(3) span{
+    background: url(../image/yinyue_mi.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(3) span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(4) span{
+    background: url(../image/yinyue_fa.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(4) span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(5) span{
+    background: url(../image/yinyue_suo.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(5) span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(6) span{
+    background: url(../image/yinyue_la.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(6) span:hover{
+    background-position: 0 -57px;
+  }
+  .bottom .bottom_rhythm ul li:nth-child(7) span{
+    background: url(../image/yinyue_xi.png);
+  }
+  .bottom .bottom_rhythm ul li:nth-child(7) span:hover{
+    background-position: 0 -57px;
+  }

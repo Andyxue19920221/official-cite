@@ -3,10 +3,602 @@
 <head>
     <meta charset="utf-8">
 	<title>index</title>
+	<!--网页搜索关键字-->
+    <meta name="keywords" content="小鸟掌学,企业培训平台,全民全学、全民全校、全民全智,微课堂,微学习,企业定制培训">
+    <!--网页描述-->
+    <meta name="description" content="小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习
+    库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员
+    工的职业生涯">
 </head>
      <link rel="stylesheet" type="text/css" href="css/index.css">
+     <link rel="stylesheet" type="text/css" href="css/common.css">
+     <link rel="stylesheet" type="text/css" href="css/animate.css">
+     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=LRMNXSMUrudBAN1iBgSyt7D7Dvq1zliW"></script>
+     <script type="text/javascript" src="js/easing.js"></script>
 <body>
+     <div id="head" style="width: 100%;height: 120px; background: purple;"></div>
+
+   <!-- 轮播图 -->
+   <div class="banner_wrap">
+     <div class="box">
+       <ul>
+         <li style="z-index: 1000">
+           <img src="image/banner01_01.png" style="left: 517px; top: 198px;">
+           <img src="image/banner01_02.png" style="left: 550px; top: 278px;">
+           <img src="image/banner01_03.png" style="left: 543px; top: 334px;">
+         </li>     
+         <li class="li1" >
+           <img src="image/banner02_01.png" style="left: 270px; top: 190px;">
+           <img src="image/banner02_02.png" style="left: 475px; top: 60px;">
+           <img src="image/banner02_03.png" style="left: 470px; top: 205px;">
+         </li>
+         <li>
+            <img src="image/banner03_01.png" style="left: 517px; top: 198px;">
+            <img src="image/banner03_02.png" style="left: 550px; top: 308px;">
+         </li>
+       </ul>
+       <div class="banner_sub">
+         <span class="banner_prev"></span>
+          <div class="ellispe">
+            <div class="active" id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
+         </div>
+         <span class="banner_next"></span>
+       </div>
+     </div>
+   </div>
+   <!-- 产品介绍 -->
+   <div class="products w">
+      <span class="products_downarrow"></span>
+      <h2>公司简介</h2>
+      <h3>About Company</h3>
+      <span class="threepoints"></span>
+      <div class="products_detail">
+         <div class="point_left">
+                <div class="line now"><i></i><span></span></div>
+                <div class="line"><i></i><span></span></div>
+                <div class="line"><i></i><span></span></div>
+                <div class="line"><i></i><span></span></div>
+                <div class="line"><i></i><span></span></div>
+                <div class="line"><i></i><span></span></div>
+            </div>
+        <div class="products_box">
+
+        <!-- 冗长的产品信息 -->
+          <ul> 
+            <li class="now">
+             <img src="image/chanpin_image01.jpg">
+             <div>
+               <span>概述</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+            <li>
+             <img src="image/chanpin_image02.jpg">
+             <div>
+               <span>小鸟掌学</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+            <li>
+             <img src="image/chanpin_image03.jpg">
+             <div>
+               <span>小鸟掌学对企业的价值</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+            <li>
+             <img src="image/chanpin_image04.jpg">
+             <div>
+               <span>小鸟掌学云平台</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+            <li>
+             <img src="image/chanpin_image05.jpg">
+             <div>
+               <span>小鸟掌学云平台</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+            <li>
+             <img src="image/chanpin_image06.jpg">
+             <div>
+               <span>小鸟掌学云平台</span></br>
+               <img src="image/pen_line.png" style="top: 65px;">
+               <img src="image/pen.png" style="top: 13px; left: 550px;">      
+               <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+               <span class="abstract">概述</span>
+               <p style="margin-left: 144px;">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+               
+               <p style="margin-top: 60px;">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+               <p>我们做的是“新学习、新媒体”！</p>
+               <p>帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+               <h3>学我所用、学以致用</h3>
+             </div>
+            </li>
+          </ul>
+           <div class="products_sub">
+               <span class="products_prev"></span>
+               <span class="products_next"></span>
+           </div>
+        </div>
+     </div>
+   </div>
+
+   <!-- 公司简介 -->
+   <div class="company">
+        <div class="products w">
+          <span style="font-family: '华文楷体';font-size: 54px; color: white">公司简介</span>
+          <span style="font-family: Arial;font-size: 18px; color: white">About Company</span>
+          <span class="threepoints"></span>
+          <div class="products_detail">
+            <div class="products_box">
+              <ul> 
+               <li class="now">
+                <img src="image/jianjie_image01.jpg">
+                <div>
+                <span style="color: white;">卓新思创科技有限公司</span></br>
+                <img src="image/pen_line.png" style="top: 65px;">
+                <img src="image/pen.png" style="top: 13px; left: 550px;">      
+                <img src="image/xiaoniao_icon.png" style="top: 128px;left: 18px;">
+                <span class="abstract" style="color: #BCA1CC">概述</span>
+                <p style="margin-left: 136px; color: #BCA1CC">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作</p>
+                <p style="margin-top: 60px; color: #BCA1CC"> 我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+                <p style="color: #BCA1CC">我们做的是“新学习、新媒体”！</p>
+                <p style="color: #BCA1CC">帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+                <h3 id="company_h3">企业培训,从未如此简单</h3>
+           </div>
+          </li>
+        </ul>
+         <div class="products_sub" style="width: 680px;right: -25px;"></div>
+      </div>
+     </div>
+    </div>
+    </div>
+  
+
+
+   <!-- 业务范围 -->
+   <div class="business">
+    
+     <img src="image/yewu_zhiyinimg.jpg">
+     <h2>业务范围</h2>
+     <h3>Business Scope</h3>
+     <span class="threepoints"></span>
+     <ul class="w">
+      <li>
+        <span>01</span>
+        <span class="spread"></span>
+        <img src="image/business_cimg01.png">
+        <div class="business_left">
+           <p style="font-size: 24px;">企业培训平台</p>
+           <p>Enterprise training platform</p>
+        </div>
+        <div class="business_right">
+           <p>我们的愿景：成为中国最强、最大的中小</p>
+           <p>微企业定制在线学习服务提供商!</p>
+           <p>我们做的是“新学习、新媒体”！</p>
+           <p>帮助企业建立自己的企业学校,实现:全民全学、</p>
+           <p>全民全校、全民全智(比拼式学习)!</p>
+        </div>
+         <div class="business_detail">
+             <p>“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+
+             <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+         </div>
+      </li>
+      <li>
+        <span>02</span>
+        <span class="spread"></span>
+        <img src="image/business_cimg02.png">
+        <div class="business_left">
+           <p style="font-size: 24px;">翡翠学院云服务</p>
+           <p>Cloud services</p>
+        </div>
+        <div class="business_right">
+           <p>我们的愿景：成为中国最强、最大的中小</p>
+           <p>微企业定制在线学习服务提供商!</p>
+           <p>我们做的是“新学习、新媒体”！</p>
+           <p>帮助企业建立自己的企业学校,实现:全民全学、</p>
+           <p>全民全校、全民全智(比拼式学习)!</p>
+        </div>
+        <div class="business_detail">
+          <p>“小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+
+          <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+
+          <p>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+
+          <p>我们做的是“新学习、新媒体”！</p>
+
+
+        </div>
+      </li>
+       <li>
+        <span>03</span>
+        <span class="spread now"></span>
+        <img src="image/business_cimg03.png">
+        <div class="business_left" style="left: 214px;"> 
+           <p style="font-size: 24px;">企业培训课程内容提供</p>
+           <p>Enterprise training course</p>
+        </div>
+        <div class="business_right">
+           <p>我们的愿景：成为中国最强、最大的中小</p>
+           <p>微企业定制在线学习服务提供商!</p>
+           <p>我们做的是“新学习、新媒体”！</p>
+           <p>帮助企业建立自己的企业学校,实现:全民全学、</p>
+           <p>全民全校、全民全智(比拼式学习)!</p>
+        </div>
+         <div class="business_detail">
+           <p > “小鸟掌学”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯。</p>
+
+           <p>“小鸟掌学”主要基于智能手机平台进行学习。针对性、趣味性、创新性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习吸收率。提高员工技能，增加企业效益。</p>
+         </div>
+      </li>
+     </ul>
+   </div>
+    
+
+
+   <!-- 团队介绍 -->
+    
+
+    <div class="team w">
+      <img src="image/tuandui_zhiyinimg.jpg">
+      <h2>团队介绍</h2>
+      <h3>Our Team</h3>
+      <span class="threepoints"></span>
+      <div class="team_box w">
+        <ul>
+         <div class="team_two" style="z-index: 1000000;">
+          <li>
+           <img src="image/team_img03.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>翼神</h4>
+               <h5>高级Java工程师</h5>
+             </div>
+             <div class="team_right">
+               <p>十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</p>
+               <div>
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+
+             <div class="team_menu">
+               <div></div>
+               <div ></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
+          </li>
+          <li>
+           <img src="image/team_img03.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>天天</h4>
+               <h5>前端工程师/设计</h5>
+             </div>
+             <div class="team_right">
+               <p>牛逼的前端工程师，牛逼的设计师，伪文艺青年一枚。</p>
+               <div>
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+              <div class="team_menu">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
+          </li>
+         </div>
+
+         <div class="team_two">
+          <li>
+           <img src="image/team_img03.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>翼神</h4>
+               <h5>高级Java工程师</h5>
+             </div>
+             <div class="team_right">
+               <p>十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</p>
+               <div>
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+              <div class="team_menu">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div ></div>
+             </div>
+           </div>
+          </li>
+          <li>
+           <img src="image/team_img01.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>翼神</h4>
+               <h5>高级Java工程师</h5>
+             </div>
+             <div class="team_right">
+               <p>十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</p>
+               <div>
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+              <div class="team_menu">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
+          </li>
+        </div> 
+
+        <div class="team_two">
+          <li>
+           <img src="image/team_img02.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>翼神</h4>
+               <h5>高级Java工程师</h5>
+             </div>
+             <div class="team_right">
+               <p>十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</p>
+               <div>
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+              <div class="team_menu">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
+          </li>
+          <li>
+           <img src="image/team_img01.png" class="avatar">
+           <i></i>
+           <div>
+             <div class="team_left">
+               <h4>翼神</h4>
+               <h5>高级Java工程师</h5>
+             </div>
+
+             <div class="team_right">
+               <p>十年Java开发经验，精通各种java框架，对于前端也有深刻的研究，在工作中是一个十足的逗比。</p>
+               <div>
+
+                 <div>
+                   <span class="envelope"></span>
+                 </div>
+                  <span>发送邮件</span>
+               </div>
+             </div>
+              <div class="team_menu">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+             </div>
+           </div>
+          </li>
+        </div>
+        </ul>
+      </div>
+      <div class="team_sub">
+         <span class="team_prev"></span>
+          <div class="ellispe">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+          </div>
+         <span class="team_next"></span>
+      </div>
+    </div>
+
+    <!-- 合作机构 -->
+
+    <div class="partner">
+     <div class="partner_top"></div>
+     <h2 style="margin-top: 85px;">合作机构</h2>
+     <h3>Our Partners</h3>
+     <span class="threepoints"></span>
+     <div class="partner_content w">
+        <div class="partner_left">
+         <h4>合作机构</h4>
+         <h5>Our Partners</h5>
+         <ul >
+           <li><img src="image/pLogo01.png"></li>
+           <li><img src="image/pLogo02.png"></li>
+           <li><img src="image/pLogo03.png"></li>
+           <li><img src="image/pLogo06.png"></li>
+           <li><img src="image/pLogo05.png"></li>
+           <li><img src="image/pLogo04.png"></li>
+         </ul>
+        </div>
+        <div class="partner_right">
+         <h4>用户</h4>
+         <h5>3000+</h5>
+         <span></span>
+         <ul>
+           <li><img src="image/uLogo01.png"></li>
+           <li><img src="image/uLogo02.png"></li>
+           <li><img src="image/uLogo03.png"></li>
+           <li><img src="image/uLogo04.png"></li>
+           <li><img src="image/uLogo05.png"></li>
+           <li><img src="image/uLogo06.png"></li>
+           <li><img src="image/uLogo07.png"></li>
+           <li><img src="image/uLogo08.png"></li>
+         </ul>
+        </div>
+     </div>
+     <div class="partner_bottom"></div>
+    </div>
+
+
+    <!-- 联系我们 -->
+   <div class="contact">
+      <h2 style="margin-top:55px;">联系我们</h2>
+     <h3>Contact Us</h3>
+     <span class="threepoints"></span>
+     <div class="contact_top w">
+       <div>
+         <div>
+         </div>
+         <input type="text" value="名字*">
+       </div>
+       <div>
+         <div style="background-position: -26px 14px;">
+         </div>
+         <input type="text" value="邮箱*">
+       </div>
+       <div style="margin-right: 0px;">
+         <div style="background-position:-76px 14px; ">
+         </div>
+         <input type="text" value="联系电话">
+       </div>
+       <div class="comment">
+        <div></div>
+        <input type="textarea" value="说点什么吧*">
+       </div>
+        <p>*亲，留言的时候，要请留下你的姓名和联系方式哦~</p>
+        <p>谢谢你的留言，我们将及时回复！</p>
+        <div class="contact_message">
+          <div></div>
+          <span>发送留言</span>
+        </div>
+     </div>
+     <div class="contact_bottom w">
+      <ul>
+       <li>
+         <img src="image/lianxi_icon01.png">
+         <div>
+         <h4>地址</h4>
+         <p>北京市昌平区站前东街2号</p>
+         <p>回龙观田园风光综合商业楼3层</p>
+         <p>邮编：100081</p>
+         </div>
+       </li>
+       <li>
+         <img src="image/lianxi_icon02.png">
+         <div>
+         <h4>电话</h4>
+         <p style="margin-top: 60px;">总机：010-8888888</p>
+         </div>
+       </li>
+       <li>
+         <img src="image/lianxi_icon03.png">
+         <div>
+         <h4>网络途径</h4>
+         <p>邮箱：cp@feicuiedu.com</p>
+         <p>微博：aaaaaaa_sina</p>
+         <p>微信：ccccccc_weixin</p>
+         </div>
+       </li>
+      </ul>
+     </div>
+   </div>
+
+
+   <!-- 地图开始 --> 
+   <div class="map">
+      <div class="map_top"></div>
+      <div id="map"></div>
+      <div class="map_bottom"></div>       
+   </div>
+
+   <!--底部-->
+  <div class="bottom">
+    <div class="bottom_rhythm w">
+       <ul>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li style="margin-right: 0px;"><span></span></li>
+       </ul>
+    </div> 
+    <p>蜀ICP备16002451号</p>
+  </div>
 
 </body>
 </html>

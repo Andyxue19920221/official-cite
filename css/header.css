@@ -53,6 +53,7 @@
     left: -10px;
     top: 30px;
     display: none;
+    z-index: 9999;
 }
 .header_wrap .nav_wrap li ul li{
 	height: 40px;
@@ -68,7 +69,7 @@
 /*鼠标移入事件*/
 .header_wrap .nav_wrap li ul li:hover{
     text-indent: 40px;
-    width: 140px;
+    width: 150px;
     transition:width 0.4s;
     transition:text-indent 0.4s;
     background: #049DEA url(../image/nav_li_bg.png) no-repeat 160px center;

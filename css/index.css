@@ -79,9 +79,12 @@
       margin-top: 2px;
       z-index: 10000;
     }
+
+    /*鼠标移入改变图片*/
     .banner_next:hover{
       background: url(../image/next_jiantou_hover.png);
     }
+    /*鼠标移入改变图片*/
     .banner_prev:hover{
       background: url(../image/prev_jiantou_hover.png);
     }
@@ -153,7 +156,7 @@
    .products .products_detail .point_left .line:hover span{
     animation: img_psn 0.5s forwards;
    }
-
+   /*动画效果*/
    @keyframes img_psn {
     0%{
         background-position: center 0;
@@ -223,6 +226,7 @@
       float: left;
       cursor: pointer;
     }
+    /*鼠标移入改变图片*/
     .products_box  .products_prev:hover{
       background: url(../image/prev_jiantou_hover.png);
     }
@@ -234,6 +238,8 @@
       float: right;
       cursor: pointer;
     }
+
+    /*鼠标移入改变图片*/
     .products_box .products_next:hover{
       background: url(../image/next_jiantou_hover.png);
     }
@@ -364,7 +370,7 @@
       text-indent: 3em;
     }
 
-
+    /*团队介绍css*/
     .team{
       height: 676px;
       background: #F1F2F6;
@@ -397,6 +403,7 @@
       display: block;
       position: absolute;
     }
+    /*鼠标移入让兄弟i元素显示*/
     .team .team_box ul li>.avatar:hover +i{
       display: block;
     }
@@ -479,20 +486,33 @@
      .team_menu div{
       width: 47px;
       height: 25%;
-      background: url(../image/team_contact.png) no-repeat center center;
+      background: url(../image/team_contact.png) no-repeat;
       position: static;
      }
-
      .team_menu div:nth-child(1){
       background-position: 13px -28px;
+     }
+     .team_menu div:nth-child(1):hover{
+       background: #168BCA url(../image/team_contact.png) 13px -28px no-repeat;
+     }
+     .team_menu div:nth-child(2){
+      background-position: center center;
+     }
+     .team_menu div:nth-child(2):hover{
+       background: #168BCA url(../image/team_contact.png) center center no-repeat;
      }
      .team_menu div:nth-child(3){
       background-position: 13px -123px;
       
      }
+     .team_menu div:nth-child(3):hover{
+       background: #168BCA url(../image/team_contact.png) 13px -123px no-repeat;
+     }
       .team_menu div:nth-child(4){
       background-position: 13px -167px;
-   
+     }
+     .team_menu div:nth-child(4):hover{
+       background: #168BCA url(../image/team_contact.png) 13px -167px no-repeat;
      }
     .team .team_sub{
       position: absolute;
@@ -543,9 +563,11 @@
       margin-top: 2px;
       z-index: 10000;
     }
+    /*鼠标移入改变图片*/
     .team_next:hover{
       background: url(../image/next_jiantou_hover.png);
     }
+    /*鼠标移入改变图片*/
     .team_prev:hover{
       background: url(../image/prev_jiantou_hover.png);
     }
@@ -559,7 +581,8 @@
       background: url(../image/team_contact.png);
       margin: 16px 13px;
     }
-
+     
+     /*合作机构*/
     .partner{
       height: 910px;
       width: 100%;
@@ -601,8 +624,6 @@
     left: 467px;
     top: 20px;
    }
-
-
    .partner h4{
     font-size: 36px;
     color: #5F4B81;
@@ -621,7 +642,7 @@
    }
 
 
-    /*lianxiwomen*/
+    /*联系我们开始*/
    .contact{
     height: 848px;
     width: 100%;
@@ -731,7 +752,9 @@
     color: #514D5B;
     line-height:16px;
   }
+   
 
+   /*地图开始*/
   .map{
     width: 100%;
     height: 686px;
@@ -759,82 +782,4 @@
     font-size: 12px;
     position: absolute;
     top:0%;
-  }
-
-
-
-  .bottom{
-    width: 100%;
-    height:334px;
-    background: url(../image/yinyue_bg.jpg);
-    border-top: 1px solid #201034;
-    text-align: center;
-  }
-  .bottom .bottom_rhythm{
-    margin-top: 110px;
-    height: 148px;
-    border-bottom: 2px dashed #9890A2;
-  }
-  .bottom p{
-    color: white;
-    font-size: 14px;
-    margin-top: 26px;
-  }
-  .bottom .bottom_rhythm ul{
-    margin: 0 auto;
-    height: 100%;
-    width: 560px;
-  }
-  .bottom .bottom_rhythm ul li{
-    margin-right: 25px;
-    width: 57px;
-    height: 100%;
-    float: left;
-  }
-  .bottom .bottom_rhythm ul li span{
-    width: 100%;
-    display: block;
-    height: 57px;
-     background: url(../image/yinyue_duo.png);
-     cursor: pointer;
-
-  }
-  .bottom .bottom_rhythm ul li span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(2) span{
-    background: url(../image/yinyue_lai.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(2) span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(3) span{
-    background: url(../image/yinyue_mi.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(3) span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(4) span{
-    background: url(../image/yinyue_fa.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(4) span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(5) span{
-    background: url(../image/yinyue_suo.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(5) span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(6) span{
-    background: url(../image/yinyue_la.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(6) span:hover{
-    background-position: 0 -57px;
-  }
-  .bottom .bottom_rhythm ul li:nth-child(7) span{
-    background: url(../image/yinyue_xi.png);
-  }
-  .bottom .bottom_rhythm ul li:nth-child(7) span:hover{
-    background-position: 0 -57px;
   }

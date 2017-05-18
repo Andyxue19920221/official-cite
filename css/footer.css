@@ -1,0 +1,49 @@
+
+/*底部样式*/
+
+.footer {
+    width: 100%;
+    height: 344px;
+    background: url("../image/yinyue_bg.jpg") no-repeat left top;
+}
+.footer .top{
+    height: 260px;
+    border-bottom: 2px dashed #9890A2;
+    position: relative;
+}
+.footer .top .melody{
+    width: 556px;
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -278px;
+    margin-top: -29px;
+}
+.footer .top .melody span{
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    margin-right: 22px;
+    border-radius: 50%;
+}
+.footer .top .melody span.music07{
+    margin-right: 0;
+}
+/*鼠标移入改变背景图片位置 并加入动画效果*/
+ div.footer div.top div.melody span:hover {
+    background-position: 0px -57px !important;
+    animation: fn 1s !important;
+}
+.footer .bottom{
+    height: 49px;
+    line-height: 80px;
+    font: 17px "华文楷体";
+    text-align: center;
+    color: #ffffff;
+    padding-top: 31px;
+}
+
+
+
+

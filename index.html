@@ -12,11 +12,13 @@
 </head>
      <link rel="stylesheet" type="text/css" href="css/index.css">
      <link rel="stylesheet" type="text/css" href="css/common.css">
-     <link rel="stylesheet" type="text/css" href="css/animate.css">
+     <link rel="stylesheet" type="text/css" href="css/animate.css">    
      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
      <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=LRMNXSMUrudBAN1iBgSyt7D7Dvq1zliW"></script>
-     <script type="text/javascript" src="js/easing.js"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+  
 <body>
      <div id="head" style="width: 100%;height: 120px; background: purple;"></div>
 
@@ -53,7 +55,7 @@
    <!-- 产品介绍 -->
    <div class="products w">
       <span class="products_downarrow"></span>
-      <h2>公司简介</h2>
+      <h2>产品介绍</h2>
       <h3>About Company</h3>
       <span class="threepoints"></span>
       <div class="products_detail">
@@ -196,14 +198,14 @@
                 <p style="color: #BCA1CC">我们做的是“新学习、新媒体”！</p>
                 <p style="color: #BCA1CC">帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
                 <h3 id="company_h3">企业培训,从未如此简单</h3>
-           </div>
+            </div>
           </li>
         </ul>
-         <div class="products_sub" style="width: 680px;right: -25px;"></div>
-      </div>
-     </div>
-    </div>
-    </div>
+             <div class="products_sub" style="width: 680px;right: -25px;"></div>
+             </div>
+          </div>
+        </div>
+   </div>
   
 
 
@@ -259,13 +261,11 @@
           <p>我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
 
           <p>我们做的是“新学习、新媒体”！</p>
-
-
         </div>
       </li>
        <li>
         <span>03</span>
-        <span class="spread now"></span>
+        <span class="spread"></span>
         <img src="image/business_cimg03.png">
         <div class="business_left" style="left: 214px;"> 
            <p style="font-size: 24px;">企业培训课程内容提供</p>
@@ -585,20 +585,14 @@
    </div>
 
    <!--底部-->
-  <div class="bottom">
-    <div class="bottom_rhythm w">
-       <ul>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-        <li style="margin-right: 0px;"><span></span></li>
-       </ul>
-    </div> 
-    <p>蜀ICP备16002451号</p>
-  </div>
+    <div id="footer" style="width: 100%; height: 150px; background: silver;"></div>
+   
+
+   <!--返回顶部-->
+    <div class="scroll_top">
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,385 @@
+.welcome_animation{
+	background-color: #299AD6;
+	width: 100%;
+	position: fixed;
+	z-index: 1000000;
+	padding-top: 50px;
+	text-align: center;
+	color: white !important;
+}
+.welcome_animation .text{
+	display: none;
+}
+.nav_wrap{
+  width: 100%;
+  height: 50px;
+  background: url("../image/aboutxiaoniao/beader_bg.jpg");
+}
+.nav_wrap .nav_logo{
+	background: url("../image/aboutxiaoniao/logo.png");
+	width: 132px;
+	display: block;
+	height: 50px;
+	float: left;
+	margin-left:36px;
+}
+.nav_wrap ul{
+	margin-left: 50px;
+	float: left;
+}
+.nav_wrap ul li{
+	margin-right: 38px;
+	font-size: 16px;
+	color: #FEFEFE;
+	margin-top: 15px;
+	float: left;
+	cursor: pointer;
+	height: 28px;
+	background: url("../image/nav_now_bg.png") no-repeat -10px -10px;
+}
+.nav_wrap ul li:hover{
+	animation:text 1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes text{
+     0%{
+        background-position: -10px -10px;
+    }
+    100%{
+        background-position: center bottom;
+    }
+}
+.nav_wrap ul .now{
+	 background: url("../image/nav_now_bg.png") no-repeat center bottom;
+}
+
+.main{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 650px;
+}
+.main .box{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+}
+.main .box .slide{
+	width: 100%;
+	min-width: 1100px;
+	margin: 0 auto;
+	background: white;
+	text-align: center;
+	color: white;
+	height: 650px;
+	position: relative;
+	border-bottom: 1px solid #211235;
+	float: left;
+	overflow: hidden;
+}
+.main .box .slide .current{
+    display: block;
+}
+.main .box .slide .hidden{
+	display: none;
+}
+div>h3{
+    font-size: 44px;
+    margin-top: -40px;
+}
+div>h5{
+	font-size: 16px;
+	letter-spacing: 4px;
+}
+div> .company_h3{
+    font-size: 48px !important;
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+    color: white !important;
+    background: url("../image/aboutxiaoniao/yinhao1_zuo.png") no-repeat left top,url("../image/aboutxiaoniao/yinhao1_you.png") no-repeat right bottom;
+}
+.main .box .slide .downarrow{
+	width: 58px;
+	height: 58px;
+	display: block;
+	background: url("../image/aboutxiaoniao/donext.png") no-repeat 0px -58px;
+	margin: 0 auto;
+}
+.main .box .slide .downarrow:hover{
+	background-position:0px 0px;
+}
+.main .box .slide>p{ 
+	font-size: 20px;
+}
+.main .box .slide>.slide_banner>h1{
+	font-size: 54px;
+	color: #301759;
+	margin-top: 40px;
+}
+.main .box .slide>.slide_banner{
+	position: absolute;
+	width: 100%;
+}
+.main .box .slide .navigation{
+	top: 50%;
+	left: 50%;
+	margin-top: -29px;
+	margin-left: -550px;
+	height: 58px;
+	width: 1100px;
+}
+.main .box .slide .navigation .end{
+	cursor: auto;
+	opacity: 0.3;
+}
+.slide .navigation>.navigation_left{
+	float: left;
+	width: 58px;
+	height: 58px;
+	display: block;
+	cursor: pointer;
+	margin:0;
+	background: url(../image/aboutxiaoniao/goleft.png) no-repeat;
+}
+.slide .navigation>.navigation_left:hover{
+    background: url(../image/aboutxiaoniao/goleft.png) no-repeat top right;
+}
+.slide .navigation>.navigation_right:hover{
+	background: url(../image/aboutxiaoniao/goright.png);
+}
+.slide .navigation>.navigation_right{
+	float: right;
+	width: 58px;
+	height: 58px;
+	display: block;
+	margin:0;
+	cursor: pointer;
+	background: url(../image/aboutxiaoniao/goright.png) no-repeat top right;
+}
+.main .box .slide>div>.app_abstract{
+    width: 695px;
+    margin: 15px auto;
+	background: url("../image/yinhao02_zuo.png") no-repeat left top,url("../image/yinhao02_you.png") no-repeat right bottom;
+}
+.main .box .slide>div>.app_abstract>p{
+    font-size: 18px;
+    width: 500px;
+    display: block;
+    color: #6B696F;
+    margin: 0 auto;
+}
+.main .box .slide>div>div{
+	margin: 25px auto;
+}
+.slide>div>div>img{
+	margin-left:35px;
+}
+
+.main .box .slide>div>.bird_title{
+	margin-top: 32px;
+}
+.main .box .slide>div>.our_goal{
+	margin-top: 48px;
+	width: 636px;
+	height: 100px;
+	text-align: left;
+	
+}
+.main .box .slide>div>.our_goal>img{
+	float: left;
+}
+.main .box .slide>div>.our_goal>div{
+	float: left;
+	margin-top: 24px;
+	margin-left: 57px;
+	color: #7D7DA7;
+}
+.main .box .slide>div>.our_goal>div>h2{
+   font-size: 24px;
+}
+.main .box .slide>div>.our_goal>div>h3{
+   font-size: 16px;
+   margin-top: 10px;
+}
+
+.slide>div>.company_h2{
+	color: #221256;
+	font-size: 35px;
+	width: 370px;
+	margin: 60px auto 50px;
+	display: block;
+	background: url("../image/aboutxiaoniao/yinhao3_zuo.png") no-repeat left top,url("../image/aboutxiaoniao/yinhao3_you.png") no-repeat right bottom;
+}
+.slide>div>p{
+	font-size: 18px;
+	color: #917D82;
+	width: 720px;
+	margin:0 auto;
+}
+.slide>h1{
+	font-size: 48px;
+	margin-top: 40px;
+	font-weight: 900;
+}
+.slide>.company_value{
+    position: relative;
+	height: 377px;
+	top: 80px;
+	left: 50%;
+	margin-left:-521px;
+	width: 963px !important;
+	border: 1px solid #221236;
+}
+.slide>.company_value>div{
+	position: relative;
+	margin:0 !important;
+}
+.slide>.company_value>.top{
+	top:0px;
+}
+.slide>.company_value>.bottom{
+	top: 350px;
+}
+.slide>.company_value>.left{
+	float: left;
+}
+.slide>.company_value>.right{
+	float: right;
+}
+.slide>.company_value>div>img{
+	position: absolute;
+}
+
+.slide>.company_value>ul{
+	margin-left: 120px;
+	margin-top: 25px;
+}
+.slide>.company_value>ul>li{
+	float: left;
+	width: 377px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+	text-align: left;
+	color: white;
+}
+.slide>.company_value>ul>li>div{
+	border: 1px solid white;
+	width: 78px;
+	height: 78px;
+	background-color:#221236;
+	border-radius: 50%;
+	float: left;
+	text-align: center;
+}
+.slide>.company_value>ul>li>div>span{
+	font-size: 18px;
+	font-family: Arial;
+	margin-top:28px;
+	display: block;
+}
+.slide>.company_value>ul>li>p{
+	float: left;
+	font-size: 18px;
+	width: 270px;
+	margin-left: 22px;
+
+}
+.slide>.description{
+	width: 912px;
+	margin:0 auto;
+	text-align: left;
+	position: relative;
+	height: 464px;
+	overflow: hidden;
+}
+.slide>.description>div{
+	position: absolute;
+	margin-top: -5px !important;
+	display: none;
+}
+.slide>.description>div.now{
+	display: block;
+}
+.slide>.description>div>p{
+	height: 25px;
+	font-size: 16px;
+	line-height: 25px;
+	border-bottom:1px dashed #A3A4A7;
+	color: #535355;
+}
+.slide>.slide_bottom{
+	margin:25px auto;
+	width: 184px;
+	height: 8px;
+}
+.slide>.slide_bottom>div{
+	width: 78px;
+	height: 8px;
+	background: url(../image/aboutxiaoniao/xiaoniaoyun_btn.png) no-repeat  0px -8px;
+	position: relative;
+	margin:0px !important;
+	text-align: left;
+	overflow: hidden;
+	cursor: pointer;
+
+}
+.slide>.slide_bottom>.slide_left{
+	float: left;
+}
+.slide>.slide_bottom>.slide_right{
+	float: right;
+}
+.slide>.slide_bottom>div>span{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../image/aboutxiaoniao/xiaoniaoyun_btn.png) no-repeat;
+
+}
+.application{
+	background: url(../image/aboutxiaoniao/app&contacts_bg.gif) no-repeat center center !important;
+}
+.application>.app{
+	margin-top: 34px;
+    margin-left: 209px;
+    text-align: left;
+}
+
+.application>.app>.app_left{
+	width: 315px;
+	height: 315px;
+	background: url(../image/aboutxiaoniao/app_downcode.png) no-repeat;
+	margin: 0px !important;
+	float: left;
+	text-align: center;
+}
+.application>.app>.app_left>span{
+	font-size: 18px;
+}
+.application>.app>.app_right{
+	
+	margin-left: 78px !important;
+	margin-top:100px !important;
+	float: left;
+	
+}
+.application>.app>.app_right>h1{
+	font-size: 32px;
+	color: white;
+	font-weight: normal;
+}
+.application>.app>.app_right>h2{
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	width: 380px;
+	border-bottom: 2px dashed #E0E0E2;
+	margin-top: 200px;
+}
+.application>.app>.app_right>p{
+  margin-top: 16px;
+  font-size: 18px;
+  color: black;
+}
+

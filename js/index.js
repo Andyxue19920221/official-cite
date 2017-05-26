@@ -11,16 +11,30 @@
     (function(){
         var i=1;
 
+        //图片上文字动画效果
+        function imgEasing() {
+            $(".box>ul>li").eq(i).siblings().find("img").eq(0).removeClass("animated fadeInLeft")
+            $(".box>ul>li").eq(i).siblings().find("img").eq(1).removeClass("animated fadeInRight")
+            $(".box>ul>li").eq(i).siblings().find("img").eq(2).removeClass("animated fadeInUp")
+
+            $(".box>ul>li").eq(i).find("img").eq(0).addClass("animated fadeInLeft")
+            $(".box>ul>li").eq(i).find("img").eq(1).addClass("animated fadeInRight")
+            $(".box>ul>li").eq(i).find("img").eq(2).addClass("animated fadeInUp")
+
+        }
+
         //自动播放功能
         function banner_auto(){
           
            $(".box>ul>li").eq(i).fadeIn(500).siblings().fadeOut(300);
 
           $(".banner_sub>.ellispe>div").eq(i).addClass("active").siblings().removeClass("active");
+          imgEasing();
            i++;
            if (i>=3) {
             i=0;
            }
+           
         }
         //两秒一次
        setInterval(banner_auto,2000)
@@ -30,6 +44,7 @@
         i=$(this).attr("id");
         $(".box>ul>li").eq(i).fadeIn(500).siblings().fadeOut(300);
         $(".banner_sub>.ellispe>div").eq(i).addClass("active").siblings().removeClass("active");
+        imgEasing();
       })
 
       //下一张图片按钮
@@ -37,10 +52,12 @@
 
         $(".box>ul>li").eq(i).fadeIn(500).siblings().fadeOut(300);
         $(".banner_sub>.ellispe>div").eq(i).addClass("active").siblings().removeClass("active");
+        imgEasing();
         i++;
            if (i>=3) {
             i=0;
            }
+
       })
       //上一张图片按钮
       $(".banner_prev").click(function(){
@@ -50,10 +67,10 @@
         }
         $(".box>ul>li").eq(i-1).fadeIn(500).siblings().fadeOut(300);
         $(".banner_sub>.ellispe>div").eq(i-1).addClass("active").siblings().removeClass("active");
+        imgEasing();
        })
        
      })();
-
 
       // 主要产品
       !(function(){
@@ -145,14 +162,21 @@
       //团队介绍
       !(function(){
          var i=0;
+         var run=false;
          //向左移动的方法
+         
          function toleft(){
+           if(run){
+            return
+           }
+           run=true;
            i--;
           if (i<0) {
           i=3;
           }
           $(".team_box>ul>div").eq(i-1).fadeIn(500).siblings().fadeOut(300);
           $(".team_sub>.ellispe>div").eq(i-1).addClass("active").siblings().removeClass("active");
+          run=false;
          }
 
 
@@ -167,15 +191,18 @@
 
          // 向右移动的方法
          function toright(){
+           if(run){
+            return
+           }
+           run=true;
            i++;
            $(".team_box>ul>div").eq(i).fadeIn(500).siblings().fadeOut(300);
            $(".team_sub>.ellispe>div").eq(i).addClass("active").siblings().removeClass("active");
-           
+           run=false;
            if (i>2) {
             i=-1;
            }
          }
-
          //点击中间的按钮 选择div
          
         $(".team_sub>.ellispe>div").each(function(i){

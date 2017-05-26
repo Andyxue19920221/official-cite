@@ -1,0 +1,106 @@
+   .company_news{
+     width: 1130px !important;
+     border-top:1px solid white;
+     position: relative;
+     text-align: center;
+     margin:0 auto;
+   }
+
+   h2{
+    font-size: 54px;
+    font-family: "华文楷体";
+    color: #311859;
+    margin-top: 126px !important;
+   }
+   h3{
+    font-size: 18px;
+    font-family: Arial;
+    color: #311859;
+    letter-spacing: 3px;
+   }
+   .threepoints{
+      width: 37px;
+      height: 8px;
+      margin:22px auto;
+      background: url(../image/three_points01.png);
+    }
+    .company_news>p{
+      margin-left: 31px;
+      font-size: 30px;
+      color: #301759;
+      text-align: left;
+    }
+    .company_news>.pen,.pen_line{
+      position: absolute;
+    }
+    .company_news ul{
+      margin-top: 36px;
+      width: 100%;
+    }
+    .company_news ul li{
+      width: 530px;
+      height: 244px;
+      background: white;
+      float: left;
+      margin:20px 15px;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+       border: 1px solid white;
+    }
+    .company_news ul li:hover{
+      border-color: #86759B;
+      transform: translateY(-10px);
+      transition: transform 0.3s;
+    }
+    .company_news ul li h4{
+      font-size: 20px;
+      color: #454447;
+    }
+    .company_news ul li h5{
+      font-size: 14px;
+      color: #46464A;
+    }
+    .company_news ul li span{
+      color: #6B696F;
+      font-size: 14px;
+    }
+    .company_news ul li .list_image{
+      margin-left:20px;
+      float: left;
+      margin-top: 36px;
+    }
+    .company_news ul li div{
+      margin-left: 294px;
+      margin-top: -158px;
+      float: left;
+    }
+    .load_more{
+      margin:0 auto;
+      margin-top: 100px;
+    }
+    .load_more>span{
+      width: 58px;
+      height: 58px;
+      display:block;
+      margin:0 auto;
+      background: url(../image/lis_more_btn_bg.png) center bottom;
+      cursor: pointer;
+    }
+    .load_more>div{
+      width: 107px;
+      height: 175px;
+      margin:0 auto;
+      background: url(../image/list_gomore_bg.jpg);
+      margin-top: 78px;
+
+    }
+    .load_more>span:hover{
+     background-position:-58px 0px;
+    }
+    .footer{
+      margin-top: 130px;
+      width: 100%;
+      height: 33px;
+      background: url(../image/map_bottomimg.png) center bottom;
+    }

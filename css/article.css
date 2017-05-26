@@ -1,0 +1,117 @@
+   body{
+    background-color: white !important;
+   }  
+   div{
+    background: white;
+   }
+  .article{
+     border-top:1px solid white;
+     position: relative;
+     text-align: center;
+     background:white;
+   }
+
+   h2{
+    font-size: 54px;
+    font-family: "华文楷体";
+    color: #311859;
+    margin-top: 126px !important;
+   }
+   h3{
+    font-size: 18px;
+    font-family: Arial;
+    color: #311859;
+    letter-spacing: 5px;
+   }
+   .threepoints{
+      width: 37px;
+      height: 8px;
+      margin:22px auto;
+      background: url(../image/three_points01.png);
+    }
+    .article>p{
+      font-size: 30px;
+      color: #301759;
+      text-align: left;
+    }
+    .article>.pen,.pen_line{
+      position: absolute;
+    }
+    .article>.article_details{
+      border-top: 1px solid white;
+      margin-top: 35px;
+      text-align: left;
+    }
+    .article>.article_details>span{
+      color: #6B696F;
+      font-size: 14px;
+    }
+    .article>.article_details>img{
+      margin-top: 58px;
+      width: 100%;
+      height: 234px;
+    }
+    .article>.article_details>.article_content{
+     margin-top: 8px;
+     text-align: left;
+     color: #46464A;
+     font-family: "华文楷体";
+    }
+    .article>.article_details>.article_content>h4{
+      font-size: 22px;
+      margin-top: 30px;
+    }
+    .article>.article_details>.article_content>p{
+      font-size: 15px;
+      text-indent: 2em;
+    }
+    .article_content>div{
+     position: relative; 
+     width: 90px;
+     margin: 0 auto;
+    }
+    .article_content .article_like{
+      width: 75px;
+      height: 73px;
+      background: url(../image/article_iflike.png) no-repeat top center;
+      display: block;
+      margin:190px auto 54px;
+    }
+    .article_content>div:hover .article_likebar{
+      display: block;
+    }
+    .article_content .article_likebar{
+        width: 135px;
+        height: 35px;
+        background: url(../image/article_iflike_nomberbg.png);
+        position: absolute;
+        left: 85px;
+        top: 18px;
+        display: none;
+    }
+    .article_content .article_likebar>span{
+      margin-top:7px;
+      font-size: 16px;
+      color: white;
+      display: block;
+      text-indent:38px;
+    }
+     .footer{
+      margin-top: 260px;
+      width: 100%;
+      height: 33px;
+      background: url(../image/map_bottomimg.png) center bottom;
+    }
+    .article_content>div>.article_like_madam{
+      background: #F1F1F5;
+      margin-left: -85px;
+      width: 255px;
+      height: 56px;
+      border-radius: 10px;
+      border-top: 1px solid white;
+      position: absolute;
+      opacity: 0;
+      text-align: center;
+      padding-top: 25px;
+      top: -200px;
+    }

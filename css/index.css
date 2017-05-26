@@ -106,6 +106,9 @@
       margin:50px auto;
       display: block;
     }
+    .products .products_downarrow:hover{
+      background: url(../image/lis_more_btn_bg.png);
+    }
     .products>span{
       color: #301759;
       display: block;
@@ -404,7 +407,7 @@
       position: absolute;
     }
     /*鼠标移入让兄弟i元素显示*/
-    .team .team_box ul li>.avatar:hover +i{
+    .team .team_box ul li:hover i{
       display: block;
     }
     .team .team_box ul li i{
@@ -619,10 +622,13 @@
    .partner .partner_right>span{
     position: absolute;
     width: 68px;
-    height: 27px;
-    background:url(../image/yonghu_morebg.png) -70px 0;
+    height: 26px;
+    background:url(../image/yonghu_morebg.png) -70px 0px;
     left: 467px;
     top: 20px;
+   }
+   .partner .partner_right>span:hover{
+    background:url(../image/yonghu_morebg.png) 0 0px;
    }
    .partner h4{
     font-size: 36px;

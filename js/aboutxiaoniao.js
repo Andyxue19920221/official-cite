@@ -41,8 +41,10 @@
             }
         }
     }
-    hash_move()
+    
     var scrollindex=0;//当前显示的第几屏
+    //不能合scrollindex交换顺序
+    hash_move();
     var scrollnum=0; //鼠标滚动的次数
     var ifscroll=false; //节流阀
     var scrollTimeout //声明计时器变量
@@ -118,7 +120,7 @@
          })
 
        $(".downarrow").click(function(){
-         $(".box").animate({"top":-($(window).height()-49)*1+"px"},1000,)
+         $(".box").animate({"top":-($(window).height()-49)*1+"px"},1000)
        })
 
     //入口动画
@@ -131,7 +133,7 @@
             })
       setTimeout(function(){
          $(".welcome_animation").slideUp()
-      },1)
+      },13000)
     };
     welcome();
     //地址栏哈希滚动

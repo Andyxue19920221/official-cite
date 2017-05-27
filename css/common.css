@@ -213,6 +213,7 @@ body{
     bottom:0;
     background: url("../image/fixed_contactus.png") no-repeat right top;
     border: 0px;
+    cursor:pointer;
 }
 .scroll_top .top:hover{
     background-position: 0 bottom;

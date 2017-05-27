@@ -1,5 +1,3 @@
-
-
 $(function () {
 	
 	// $("#head").load("header.html"); //底层用的AJAX, 要用服务器方式打开 //如果不想用服务器,只能用火狐
@@ -103,8 +101,6 @@ $(function () {
          
          getlist() 
        })
-
-
 
 
     })()

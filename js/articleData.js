@@ -14,7 +14,7 @@ articleData.xiaoniaoNews1= {
 		"title":"卓新思创重装出发",
 		"sysId":1,
 		"content":content,
-		"coverImg":"images/article_image01.jpg"
+		"coverImg":"image/article_image01.jpg"
 	}
 }
 
@@ -30,7 +30,7 @@ articleData.xiaoniaoNews2= {
 		"title":"小鸟掌学开通国外渠道",
 		"sysId":2,
 		"content":content,
-		"coverImg":"images/article_image02.jpg"
+		"coverImg":"image/article_image02.jpg"
 	}
 }
 
@@ -46,7 +46,7 @@ articleData.xiaoniaoNews3= {
 		"title":"卓新思创天气app上线",
 		"sysId":3,
 		"content":content,
-		"coverImg":"images/article_image03.jpg"
+		"coverImg":"image/article_image03.jpg"
 	}
 }
 
@@ -62,7 +62,7 @@ articleData.xiaoniaoNews4= {
 		"title":"国外报道",
 		"sysId":4,
 		"content":content,
-		"coverImg":"images/article_image04.jpg"
+		"coverImg":"image/article_image04.jpg"
 	}
 }
 
@@ -78,7 +78,7 @@ articleData.companyIdea= {
 		"typeEntitle":"company culture",
 		"title":"公司理念",
 		"content":content,
-		"coverImg":"images/article_image05.jpg"
+		"coverImg":"image/article_image05.jpg"
 	}
 }
 
@@ -94,7 +94,7 @@ articleData.companyCulture= {
 		"typeEntitle":"company culture",
 		"title":"公司文化",
 		"content":content,
-		"coverImg":"images/article_image06.jpg"
+		"coverImg":"image/article_image06.jpg"
 	}
 }
 
@@ -110,7 +110,7 @@ articleData.companyEnvironment= {
 		"typeEntitle":"company culture",
 		"title":"公司氛围",
 		"content":content,
-		"coverImg":"images/article_image07.jpg"
+		"coverImg":"image/article_image07.jpg"
 	}
 }
 
@@ -127,7 +127,7 @@ articleData.talents= {
 		"typeEntitle":"company culture",
 		"title":"人才理念",
 		"content":content,
-		"coverImg":"images/article_image08.jpg"
+		"coverImg":"image/article_image08.jpg"
 	}
 }
 
@@ -143,7 +143,7 @@ articleData.team= {
 		"typeEntitle":"company culture",
 		"title":"团队介绍",
 		"content":content,
-		"coverImg":"images/article_image09.jpg"
+		"coverImg":"image/article_image09.jpg"
 	}
 }
 
@@ -159,7 +159,7 @@ articleData.joinUs= {
 		"typeEntitle":"company culture",
 		"title":"招聘信息",
 		"content":content,
-		"coverImg":"images/article_image10.jpg"
+		"coverImg":"image/article_image10.jpg"
 	}
 }
 
@@ -176,6 +176,6 @@ articleData.telUs= {
 		"typeEntitle":"Contact Us",
 		"title":"联系我们",
 		"content":content,
-		"coverImg":"images/article_image11.jpg"
+		"coverImg":"image/article_image11.jpg"
 	}
 }

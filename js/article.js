@@ -1,5 +1,5 @@
 $(function () {
-	
+	   
 	$("#head").load("header.html"); //底层用的AJAX, 要用服务器方式打开 //如果不想用服务器,只能用火狐
     
 
@@ -13,6 +13,7 @@ $(function () {
       if(!like){
         like=true;
         $(".article_like_madam").text(text[Math.floor(Math.random()*text.length)]);
+        $(".article_like").css("cursor","auto");
         move();
       }
       else if(like && $(".article_like_madam").text()=="再点一下试试~" ){
@@ -38,4 +39,33 @@ $(function () {
        })
       })
     })()
+    //动态获取article页面
+    !(function(){
+       
+       var GLOBAL = GLOBAL || {};
+       function getUrl(name){
+          var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+          var r = window.location.search.substr(1).match(reg);
+          if(r!=null)return decodeURI(r[2]);return "";
+       }
+        GLOBAL.articletype=getUrl("type");
+        GLOBAL.articleID=getUrl("ArticleID");
+        function getarticledata(){
+        var articledata=articleData[GLOBAL.articletype+GLOBAL.articleID].data;
+        var updateTime=articledata.updateAt?articledata.updateAt:articledata.creatAt;
+        var author=articledata.updateByFullName?articledata.updateByFullName:creatByFullName;
+        if (articledata!=null) {
+            $("#typeTitle").text(articledata.typeTitle);
+                $("#typeEntitle").text(articledata.typeEntitle);
+                $("#articleTitle").text(articledata.title);
+                $("#updateTime").text(updateTime+" "+author);
+                $("#cover").attr("src",articledata.coverImg);
+                $("#content").html(articledata.content);
+
+        }
+       } 
+       getarticledata();
+    })()
+    
+
 })

@@ -61,13 +61,14 @@
       position: absolute;
       left: 180px;
       top: 0px;
+      cursor: pointer;
     }
     .banner_sub .banner_prev{
       width: 29px;
       height: 29px;
       background: url(../image/prev_jiantou.png);
       display: block;
-
+      cursor: pointer;
     }
     .banner_sub .ellispe div{
       width: 10px;
@@ -78,6 +79,7 @@
       margin-left:6px;
       margin-top: 2px;
       z-index: 10000;
+      cursor: pointer;
     }
 
     /*鼠标移入改变图片*/

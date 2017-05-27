@@ -65,6 +65,7 @@
 	transition:text-indent 0.4s;
 	transition:width 0.4s;
 	transition: background 0.4s;
+    cursor: pointer;
 }
 /*鼠标移入事件*/
 .header_wrap .nav_wrap li ul li:hover{

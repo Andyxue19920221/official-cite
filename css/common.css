@@ -204,6 +204,7 @@ body{
     height: 50px;
     margin: 0 auto;
     background: url("../image/scroll_top_bg.png") no-repeat left top;
+    cursor: pointer;
 }
 .scroll_top .bottom{
     width: 100%;

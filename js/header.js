@@ -29,5 +29,9 @@ $(function () {
         }
 
       })
+
+      $(".article li").click(function(){
+        window.open("article.html?type="+$(this).attr("id"))
+      })
     })()
 })

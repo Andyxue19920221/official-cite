@@ -1,6 +1,7 @@
 $(function () {
 	   
-	$("#head").load("header.html"); //底层用的AJAX, 要用服务器方式打开 //如果不想用服务器,只能用火狐
+	  $("#head").load("header.html");
+    //底层用的AJAX, 要用服务器方式打开 //如果不想用服务器,只能用火狐
     
 
     /*footer part*/
@@ -11,6 +12,7 @@ $(function () {
 
      var text=["娘娘威武","皇上万岁，万万岁","爱死你啦、MUA~","再点一下试试~"];
      var like=false;
+     var like_count=0;
      $(".article_like").click(function(){
       if(!like){
         like=true;
@@ -27,10 +29,12 @@ $(function () {
 
      //点赞文字动画
       function move() {
+            like_count++;
             $(".article_like_madam").animate({"top":"130px", "opacity": 1},2000,"elasticOut",function () {
                 $(".article_like_madam").delay(500).animate({"left":"-422px","opacity": "0"},1000,function () {
                     $(".article_like").animate({"backgroundPositionY":"-72px"})
                     $(".article_like_madam").css({"left":"0px","top":"-200px"})
+                    $(".like_count").text("喜欢（2"+like_count+"）")
                 })
             })
         }
@@ -52,8 +56,11 @@ $(function () {
 
        function getUrl(name){
         //正则匹配url中的文字
+        //重要的url 匹配
           var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
           var r = window.location.search.substr(1).match(reg);
+
+          //同if判断   decodeURI支持中文字符
           if(r!=null)return decodeURI(r[2]);return "";
        }
         GLOBAL.articletype=getUrl("type");

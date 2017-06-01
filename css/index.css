@@ -107,6 +107,7 @@
       background: url(../image/goOn_icon01.png);
       margin:50px auto;
       display: block;
+      cursor:pointer;
     }
     .products .products_downarrow:hover{
       background: url(../image/lis_more_btn_bg.png);

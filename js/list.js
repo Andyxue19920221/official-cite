@@ -9,19 +9,13 @@ $(function () {
     !(function(){
       
       //点击笔执行动画
-      $(".pen").click(function(){
-
-        //笔
+     $(".pen").click(function(){
        $(".pen").animate({left:"0px"},1,function(){
-            $(".pen").animate({left:"1050px"},1000,"easeIn")
-
-            //线
-       }).siblings(".pen_line").animate({width:"0px"},1,function(){
-       	    $(".pen_line").animate({width:"1040px"},1000,"easeIn") 
+            $(".pen").animate({left:"1040px"},1000)
+       }).siblings(".pen_line").animate({width:"100px"},1,function(){
+            $(".pen_line").animate({width:"1045px"},1000) 
        })
       })
-      
-       
     })()
      //设定一个全局的独享
     var  GLOBAL=GLOBAL||{};

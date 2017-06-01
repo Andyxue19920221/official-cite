@@ -105,6 +105,7 @@ div> .company_h3{
 	display: block;
 	background: url("../image/aboutxiaoniao/donext.png") no-repeat 0px -58px;
 	margin: 0 auto;
+	cursor: pointer;
 }
 .main .box .slide .downarrow:hover{
 	background-position:0px 0px;
